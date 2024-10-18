@@ -6,13 +6,14 @@
     <title>Blog - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">My Blog</a>
+            <a class="navbar-brand" href="#">Rakha</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +33,7 @@
     <!-- Header Section -->
     <header class="bg-light py-5">
         <div class="container text-center">
-            <h1>Welcome to My Blog</h1>
+            <h1>Welcome to My Journey</h1>
             <p class="lead">Sharing thoughts and ideas.</p>
         </div>
     </header>
@@ -46,6 +47,15 @@
         <img src="images/profile.jpg" alt="Profile Picture" class="card-img-top rounded-circle" style="width: 200px; height: 200px; object-fit: cover; margin: 0 auto;">
         <div class="card-body text-center">
             <h5 class="card-title">Muhammad Rakha Alzuhri</h5>
+            <h6 class="card-title">Iam a <span class="role" id="typing"></span></h6>
+            <script>
+             var typed = new Typed('#typing', {
+  strings: ["Programmer.", "Web Developer.", "Software Engineers.", "Cyber Security."],
+  typeSpeed: 70,
+  loop: true,
+  startDelay: 500
+});
+            </script>
         </div>
     </div>
 </div>
